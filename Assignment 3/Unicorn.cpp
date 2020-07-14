@@ -1,0 +1,52 @@
+/******************************************************
+** Program: Unicorn.cpp
+** Author: Mishary Alotaibi
+** Date: 05/09/2020
+** Description:Everything related to the class
+** Input:-
+** Output:-
+******************************************************/
+#include "Unicorn.h"
+/*********************************************************************
+** Function:Unicorn
+** Description:Constructer that initialize everything
+** Parameters:-
+** Pre-Conditions:-
+** Post-Conditions:-
+*********************************************************************/
+Unicorn::Unicorn()
+{
+    age = 24;
+    price = 20000;
+    babies = 0;
+    foodcost = 0;
+    revenue = 10000;
+    status = "adult";
+    alive = true;
+}
+/*Monkey::Monkey(int agee, int pricee, int babiese, int foodcoste, int revenuee, string statuse)
+{
+    age = agee;
+    price = pricee;
+    babies = babiese;
+    foodcost = foodcoste;
+    revenue = revenuee;
+    status = statuse;
+}*/
+Unicorn::~Unicorn() {}
+/*********************************************************************
+** Function:AOO for class
+** Description:copys everything
+** Parameters: class
+*********************************************************************/
+Unicorn &Unicorn::operator=(const Unicorn &x)
+{
+    this->age = x.age;
+    this->price = x.price;
+    this->babies = x.babies;
+    this->foodcost = x.foodcost;
+    this->revenue = x.revenue;
+    this->status = x.status;
+    this->alive = x.alive;
+    return *this;
+}
